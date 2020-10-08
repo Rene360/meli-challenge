@@ -1,0 +1,11 @@
+@mixin font-family() {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin font-light() {
+	@include font-family();
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	text-decoration: none;
+}

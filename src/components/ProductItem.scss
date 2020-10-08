@@ -1,0 +1,60 @@
+@import './src/scss/_reset';
+@import './src/scss/_colors';
+@import './src/scss/_variables';
+
+.product-item {
+	padding: $spacing-m $spacing-m $spacing-m 0;
+	overflow: hidden;
+	border-bottom: 1px solid $line-color;
+	position: relative;
+
+	.product-image {
+		width: 150px;
+		height: 150px;
+		float: left;
+		border-radius: 4px;
+		margin-right:  $spacing-m;
+	}
+
+	.info-item {
+		a {
+			color: $text-dark-color;
+			text-decoration: none;
+
+			.title {
+				font-size: $font-size-4;
+				font-weight: 600;
+			}
+		}
+
+		img {
+			width: 20px;
+			height: 20px;
+			margin: $spacing-s;
+		}
+
+		p {
+			display: table;
+			margin-bottom: $spacing-l;
+
+			span {
+				font-size: $font-size-5;
+				float: left;
+
+				.decimal {
+					font-size: $font-size-2;
+					float: right;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+
+	.city {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: $spacing-m $spacing-s;
+		margin-top: $spacing-s;
+	}
+}

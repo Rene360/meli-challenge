@@ -1,0 +1,12 @@
+@import './src/scss/_reset';
+@import './src/scss/_colors';
+@import './src/scss/_variables';
+
+.cnt-breadcrumb {
+    margin-bottom: $spacing-m;
+    color: $text-light-color;
+
+    li {
+        display: inline-block;
+    }
+}
